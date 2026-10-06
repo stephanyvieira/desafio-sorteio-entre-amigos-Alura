@@ -1,8 +1,7 @@
-//O principal objetivo deste desafio é fortalecer suas habilidades em lógica de programação. Aqui você deverá desenvolver a lógica para resolver o problema.
-// Array para armazenar os nomes
+
 let amigos = [];
 
-// Função para adicionar um amigo à lista
+
 function adicionarAmigo() {
   const input = document.getElementById('amigo');
   const nome = input.value.trim();
@@ -22,7 +21,7 @@ function adicionarAmigo() {
   atualizarLista();
 }
 
-// Atualiza a lista de amigos na tela
+
 function atualizarLista() {
   const lista = document.getElementById('listaAmigos');
   lista.innerHTML = '';
@@ -34,7 +33,6 @@ function atualizarLista() {
   });
 }
 
-// Função para sortear um amigo
 function sortearAmigo() {
   if (amigos.length < 2) {
     alert('Adicione pelo menos 2 nomes para sortear.');
